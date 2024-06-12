@@ -1,0 +1,211 @@
+\documentclass[12pt]{article}
+ 
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amsthm,amssymb,scrextend}
+\usepackage{fancyhdr}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage{pgfplots}
+\usepackage{multicol}
+\usepackage[colorlinks=true, pdfstartview=FitV, linkcolor=blue,
+citecolor=blue, urlcolor=blue]{hyperref}
+\usepackage{xcolor} % for other colors than black
+\usepackage{tcolorbox}
+\usepackage{graphicx}
+\usepackage[T1]{fontenc}
+
+\usepackage{lipsum} % For demo purposes; you may remove this.
+
+\pagestyle{fancy}
+\definecolor{SCSPurple}{HTML}{5E6CBF}
+\definecolor{SCSDarkPurple}{HTML}{181E40}
+
+\newtcolorbox{newboxbox}[1]{ % For \fancybox environment.
+    % Dimensions and layout
+    toptitle=2.5pt,
+    bottomtitle=2.5pt,
+    righthand width=0.20\textwidth,
+    % Coloring
+    colbacktitle=gray!30,
+    coltitle=black,
+    colback=white,
+    colframe=black,
+    % Title formatting
+    title={
+        #1
+    },
+    fonttitle=\bfseries
+}
+\newenvironment{fancybox}[1]{
+    \vspace{0.05in}
+    \begin{newboxbox}{#1}
+}{\end{newboxbox}}
+
+
+\begin{document}
+ 
+% EVERYTHING ABOVE THIS LINE IS PREAMBLE, NO NEED TO MESS WITH IT.
+% __________________________________________________________________________________________
+
+
+\include{coverpage}
+
+\lhead{Your (Shortened) Document Title Here}
+\rhead{SwiftControl Systems Inc.}
+
+\fancyfoot{}
+
+\lfoot{\footnotesize{\copyright\text{ }2024 YOUR NAME HERE, SwiftControl Systems Inc.}}
+\rfoot{\thepage}
+
+% Table of Contents & LaTeX Template Text ------------------------------------------------
+\pagenumbering{roman}
+\newpage
+\tableofcontents
+\vfill
+\noindent\rule{\textwidth}{0.5pt}\vspace{0.1in}
+\noindent\small{Compiled with \LaTeX\text{ }using Overleaf. This SwiftControl-tailored template, designed and programmed by Ahmed Osman, can be found at the following GitHub repo:
+\\\\\href{https://github.com/OmnipotentBlade/SCSLaTeXTemplate}{https://github.com/OmnipotentBlade/SCSLaTeXTemplate}}
+\newpage
+\pagenumbering{arabic}
+% ----------------------------------------------------------------------------------------
+
+
+% Main Content ---------------------------------------------------------------------------
+\begin{tcolorbox}[width=\textwidth, colframe=SCSPurple]
+    \section{\text{First Main Section Title}}
+\end{tcolorbox}
+\vspace{0.1in}
+{
+    \subsection{First Subsection Title}
+    {
+        \lipsum[1]
+        
+        \subsubsection{First SubSubsection Title}
+        {
+            \begin{itemize}
+                \item \lipsum[19]
+            \end{itemize}
+        }
+        
+        \subsubsection{Second SubSubsection Title}
+        {
+            \begin{itemize}
+                \item \lipsum[2]
+            \end{itemize}
+        }
+    }
+    \subsection{Second Subsection Title}
+    {
+        \lipsum[1]
+        
+        \subsubsection{First SubSubsection Title}
+        {
+            \begin{itemize}
+                \item \lipsum[19]
+            \end{itemize}
+        }
+        
+        \subsubsection{Second SubSubsection Title}
+        {
+            \begin{itemize}
+                \item \lipsum[2]
+            \end{itemize}
+        }
+    }
+    
+}
+\newpage
+
+\begin{tcolorbox}[width=\textwidth, colframe=SCSPurple]
+    \section{\text{Second Main Section Title}}
+\end{tcolorbox}
+\vspace{0.1in}
+{
+    \subsection{First Subsection Title}
+    {
+        \lipsum[1]
+        
+        \subsubsection{First SubSubsection Title}
+        {
+            \begin{itemize}
+                \item \lipsum[19]
+            \end{itemize}
+        }
+        
+        \subsubsection{Second SubSubsection Title}
+        {
+            \begin{itemize}
+                \item \lipsum[2]
+            \end{itemize}
+        }
+    }
+    \subsection{Second Subsection Title}
+    {
+        \lipsum[1]
+        
+        \subsubsection{First SubSubsection Title}
+        {
+            \begin{itemize}
+                \item \lipsum[19]
+            \end{itemize}
+        }
+        
+        \subsubsection{Second SubSubsection Title}
+        {
+            \begin{itemize}
+                \item \lipsum[2]
+            \end{itemize}
+        }
+    }
+    
+}
+\newpage
+
+\begin{tcolorbox}[width=\textwidth, colframe=SCSPurple]
+    \section{\text{Third Main Section Title}}
+\end{tcolorbox}
+\vspace{0.1in}
+{
+    \subsection{First Subsection Title}
+    {
+        \lipsum[1]
+        
+        \subsubsection{First SubSubsection Title}
+        {
+            \begin{itemize}
+                \item \lipsum[19]
+            \end{itemize}
+        }
+        
+        \subsubsection{Second SubSubsection Title}
+        {
+            \begin{itemize}
+                \item \lipsum[2]
+            \end{itemize}
+        }
+    }
+    \subsection{Second Subsection Title}
+    {
+        \lipsum[1]
+        
+        \subsubsection{First SubSubsection Title}
+        {
+            \begin{itemize}
+                \item \lipsum[19]
+            \end{itemize}
+        }
+        
+        \subsubsection{Second SubSubsection Title}
+        {
+            \begin{itemize}
+                \item \lipsum[2]
+            \end{itemize}
+        }
+    }
+    
+}
+
+% THE DOCUMENT IS ESSENTIALLY DONE AT THIS POINT, NO NEED TO EDIT ANYTHING BELOW THIS.______________________________________________________________________________________________
+ 
+\end{document}
