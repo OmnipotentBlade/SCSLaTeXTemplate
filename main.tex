@@ -7,8 +7,8 @@
 \usetikzlibrary{calc}
 \usepackage{pgfplots}
 \usepackage{multicol}
-\usepackage[colorlinks=true, pdfstartview=FitV, linkcolor=blue,
-citecolor=blue, urlcolor=blue]{hyperref}
+\usepackage[colorlinks=true, pdfstartview=FitV, linkcolor=black,
+citecolor=black, urlcolor=black]{hyperref}
 \usepackage{xcolor} % for other colors than black
 \usepackage{tcolorbox}
 \usepackage{graphicx}
@@ -17,8 +17,8 @@ citecolor=blue, urlcolor=blue]{hyperref}
 \usepackage{lipsum} % For demo purposes; you may remove this.
 
 \pagestyle{fancy}
-\definecolor{SCSPurple}{HTML}{5E6CBF}
-\definecolor{SCSDarkPurple}{HTML}{181E40}
+\definecolor{SCSPurple}{HTML}{5260AF}
+\definecolor{SCSDarkPurple}{HTML}{5C9EF8}
 
 \newtcolorbox{newboxbox}[1]{ % For \fancybox environment.
     % Dimensions and layout
@@ -26,7 +26,7 @@ citecolor=blue, urlcolor=blue]{hyperref}
     bottomtitle=2.5pt,
     righthand width=0.20\textwidth,
     % Coloring
-    colbacktitle=gray!30,
+    colbacktitle=F0F6FC,
     coltitle=black,
     colback=white,
     colframe=black,
@@ -44,18 +44,18 @@ citecolor=blue, urlcolor=blue]{hyperref}
 
 \begin{document}
  
-% EVERYTHING ABOVE THIS LINE IS PREAMBLE, NO NEED TO MESS WITH IT.
+% EVERYTHING ABOVE THIS LINE IS A PREAMBLE, NO NEED TO MESS WITH IT.
 % __________________________________________________________________________________________
 
 
-\include{coverpage}
+\include{cover_page}
 
 \lhead{Your (Shortened) Document Title Here}
-\rhead{SwiftControl Systems Inc.}
+\rhead{SwiftControl Systems LLC}
 
 \fancyfoot{}
 
-\lfoot{\footnotesize{\copyright\text{ }2024 YOUR NAME HERE, SwiftControl Systems Inc.}}
+\lfoot{\footnotesize{\copyright\text{ }2024 YOUR NAME HERE, SwiftControl Systems LLC}}
 \rfoot{\thepage}
 
 % Table of Contents & LaTeX Template Text ------------------------------------------------
@@ -72,139 +72,9 @@ citecolor=blue, urlcolor=blue]{hyperref}
 
 
 % Main Content ---------------------------------------------------------------------------
-\begin{tcolorbox}[width=\textwidth, colframe=SCSPurple]
-    \section{\text{First Main Section Title}}
-\end{tcolorbox}
-\vspace{0.1in}
-{
-    \subsection{First Subsection Title}
-    {
-        \lipsum[1]
-        
-        \subsubsection{First SubSubsection Title}
-        {
-            \begin{itemize}
-                \item \lipsum[19]
-            \end{itemize}
-        }
-        
-        \subsubsection{Second SubSubsection Title}
-        {
-            \begin{itemize}
-                \item \lipsum[2]
-            \end{itemize}
-        }
-    }
-    \subsection{Second Subsection Title}
-    {
-        \lipsum[1]
-        
-        \subsubsection{First SubSubsection Title}
-        {
-            \begin{itemize}
-                \item \lipsum[19]
-            \end{itemize}
-        }
-        
-        \subsubsection{Second SubSubsection Title}
-        {
-            \begin{itemize}
-                \item \lipsum[2]
-            \end{itemize}
-        }
-    }
-    
-}
-\newpage
-
-\begin{tcolorbox}[width=\textwidth, colframe=SCSPurple]
-    \section{\text{Second Main Section Title}}
-\end{tcolorbox}
-\vspace{0.1in}
-{
-    \subsection{First Subsection Title}
-    {
-        \lipsum[1]
-        
-        \subsubsection{First SubSubsection Title}
-        {
-            \begin{itemize}
-                \item \lipsum[19]
-            \end{itemize}
-        }
-        
-        \subsubsection{Second SubSubsection Title}
-        {
-            \begin{itemize}
-                \item \lipsum[2]
-            \end{itemize}
-        }
-    }
-    \subsection{Second Subsection Title}
-    {
-        \lipsum[1]
-        
-        \subsubsection{First SubSubsection Title}
-        {
-            \begin{itemize}
-                \item \lipsum[19]
-            \end{itemize}
-        }
-        
-        \subsubsection{Second SubSubsection Title}
-        {
-            \begin{itemize}
-                \item \lipsum[2]
-            \end{itemize}
-        }
-    }
-    
-}
-\newpage
-
-\begin{tcolorbox}[width=\textwidth, colframe=SCSPurple]
-    \section{\text{Third Main Section Title}}
-\end{tcolorbox}
-\vspace{0.1in}
-{
-    \subsection{First Subsection Title}
-    {
-        \lipsum[1]
-        
-        \subsubsection{First SubSubsection Title}
-        {
-            \begin{itemize}
-                \item \lipsum[19]
-            \end{itemize}
-        }
-        
-        \subsubsection{Second SubSubsection Title}
-        {
-            \begin{itemize}
-                \item \lipsum[2]
-            \end{itemize}
-        }
-    }
-    \subsection{Second Subsection Title}
-    {
-        \lipsum[1]
-        
-        \subsubsection{First SubSubsection Title}
-        {
-            \begin{itemize}
-                \item \lipsum[19]
-            \end{itemize}
-        }
-        
-        \subsubsection{Second SubSubsection Title}
-        {
-            \begin{itemize}
-                \item \lipsum[2]
-            \end{itemize}
-        }
-    }
-    
-}
+\input{sections/section_1}
+\input{sections/section_2}
+\input{sections/section_3}
 
 % THE DOCUMENT IS ESSENTIALLY DONE AT THIS POINT, NO NEED TO EDIT ANYTHING BELOW THIS.______________________________________________________________________________________________
  
